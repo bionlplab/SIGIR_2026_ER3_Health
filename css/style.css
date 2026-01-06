@@ -175,12 +175,6 @@ table.psets {
 	font-family: "Courier New", Courier, monospace 
 }
 
-.instructorphoto img {
-  width: 120px;
-  border-radius: 120px;
-  margin-bottom: 10px;
-}
-
 .instructorphotosmall img {
   width: 60px;
   border-radius: 60px;
@@ -189,8 +183,31 @@ table.psets {
 
 .instructorphoto img {
   width: 120px;
-  height: 120px;          
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+.organizer-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.instructor {
+  width: 220px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.instructor a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.instructor a > div:last-child {
+  min-height: 64px;      /* 关键 */
+  line-height: 1.35;
 }
